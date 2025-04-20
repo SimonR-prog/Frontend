@@ -1,9 +1,8 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 :root{
-    --font-standard: ;
+    --font: "Inter", sans-serif;
 
     /* PRIMARY: */
     --primary-100: #F26CF9;
@@ -53,15 +52,28 @@
     --medium: 500;
     --semibold: 600;
     --bold: 700;
+
+    /* BACKGROUND  */
+    --background-color: var(--grey-10);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+html, body {
+    font-family: var(--font);
+    font-weight: var(--regular);
+    font-style: normal;
+    font-size: 16px;
+    color: var(--grey-100);
+    background-color: var(--background-color);
 }
 
 /* HEADERS */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: var(--font-standard);
     font-weight: var(--semibold);
     color: var(--grey-100);
-    font-style: normal;
     margin: 0;
     padding: 0;
 }
